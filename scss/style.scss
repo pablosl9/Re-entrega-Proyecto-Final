@@ -1,0 +1,355 @@
+@import "base/variables";
+@import "base/mapas";
+@import "base/mixin";
+@import "base/extend";
+@import "base/condicionales";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Roboto', sans-serif;
+    background-image: url(../img/Fondo.jpg);
+}
+
+header{
+    top: 0;
+    height: auto;
+    display: block;
+    background-color: $color-principal;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    h1{
+        font-weight: bold;
+        font-size: 2.3rem;
+        nav{
+            display: flex;
+            margin-bottom: 1rem;
+            ul{
+                list-style: none;
+                li{
+                    background-color: $color-secundario;
+                    padding: 5px;
+                    border-radius: 25px;
+                    font-weight: bold;
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+}
+
+.parrafo{
+    display: block;
+    grid-area: parrafo;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+.carousel{
+    display: none;
+}
+.boton-uno{
+    display: inline;
+    @include box-botones;
+}
+
+footer{
+    background-color: $color-principal;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "logo derechos"
+                         "logo preguntas"
+                         "logo pago";
+    
+    @extend %center;
+    .ff{
+        list-style: none;
+    }
+    .derechos{
+        text-align: center;
+        grid-area: derechos;
+    }
+    .preguntas{
+        grid-area: preguntas;
+    }
+    .pago{
+        grid-area: pago;
+    }
+    .logo{
+        grid-area: logo;
+        max-width: 8rem;
+        max-height: 8rem;
+    }
+}
+
+.subtitulos{
+    text-align: center;
+    font-weight: bold;
+}
+
+.form{
+    font-size: 1.1rem;
+}
+
+.usuario{
+    list-style: none;
+}
+
+.bot-form{
+    margin-top: 1rem;
+}
+
+.contact{
+    margin: 2rem;
+}
+.ig{
+    @include medidas-galeria(3rem, 3rem);
+}
+.tiktok{
+    @include medidas-galeria(3rem, 3rem);
+}
+.fb{
+    @include medidas-galeria(3rem, 3rem);
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "titulo-galeria titulo-galeria"
+                         "galeria-uno galeria-uno"
+                         "galeria-dos galeria-dos"
+                         "galeria-tres galeria-tres"
+                         "galeria-cuatro galeria-cuatro"
+                         "galeria-cinco galeria-cinco"
+                         "galeria-seis galeria-seis";
+    
+    @extend %center;
+    
+    .titulo-galeria{
+        grid-area: titulo-galeria;
+    }
+    .galeria-uno{
+        grid-area: galeria-uno;
+        margin-bottom: 2rem;
+        @include medidas-galeria(23rem, 23rem);
+    }
+    .galeria-dos{
+        grid-area: galeria-dos;
+        margin-bottom: 2rem;
+        @include medidas-galeria(23rem, 23rem);
+    }
+    .galeria-tres{
+        grid-area: galeria-tres;
+        margin-bottom: 2rem;
+        @include medidas-galeria(23rem, 23rem);
+    }
+    .galeria-cuatro{
+        grid-area: galeria-cuatro;
+        margin-bottom: 2rem;
+        @include medidas-galeria(23rem, 23rem);
+    }
+    .galeria-cinco{
+        grid-area: galeria-cinco;
+        margin-bottom: 2rem;
+        @include medidas-galeria(23rem, 23rem);
+    }
+    .galeria-seis{
+        grid-area: galeria-seis;
+        margin-bottom: 2rem;
+        @include medidas-galeria(23rem, 23rem);
+    }
+}
+.sanji{
+    display: none;
+}
+
+@media screen and (min-width:600px){
+    header h1{
+     font-size: 3rem;
+    }
+
+    header nav ul li{
+     font-size: 1.5rem;
+    }
+
+     .boton-uno{
+        margin-bottom: 2rem;
+     }
+ 
+     .carousel{
+         display: block;
+    }
+
+    .galeria{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "titulo-galeria titulo-galeria"
+                             "galeria-uno galeria-uno"
+                             "galeria-dos galeria-dos"
+                             "galeria-tres galeria-tres"
+                             "galeria-cuatro galeria-cuatro"
+                             "galeria-cinco galeria-cinco"
+                             "galeria-seis galeria-seis";
+        
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+
+        .titulo-galeria{
+            grid-area: titulo-galeria;
+        }
+        .galeria-uno{
+            grid-area: galeria-uno;
+            max-width: 40rem;
+            max-height: 40rem;
+            margin-bottom: 2rem;
+        }
+        .galeria-dos{
+            grid-area: galeria-dos;
+            max-width: 40rem;
+            max-height: 40rem;
+            margin-bottom: 2rem;
+        }
+        .galeria-tres{
+            grid-area: galeria-tres;
+            max-width: 40rem;
+            max-height: 40rem;
+            margin-bottom: 2rem;
+        }
+        .galeria-cuatro{
+            grid-area: galeria-cuatro;
+            max-width: 40rem;
+            max-height: 40rem;
+            margin-bottom: 2rem;
+        }
+        .galeria-cinco{
+            grid-area: galeria-cinco;
+            max-width: 40rem;
+            max-height: 40rem;
+            margin-bottom: 2rem;
+        }
+        .galeria-seis{
+            grid-area: galeria-seis;
+            max-width: 40rem;
+            max-height: 40rem;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+@media screen and (min-width:1024px){
+    header{
+        background-color: lightpink;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        display: flex; 
+        flex-direction: row;
+    }
+
+    footer{
+        margin-top: 20rem;
+    }
+
+    .form{
+        font-size: 1.5rem;
+    }
+
+    .usuario{
+        font-size: 1.5rem;
+    }
+    
+    .galeria{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "titulo-galeria titulo-galeria"
+                             "galeria-uno galeria-dos"
+                             "galeria-tres galeria-cuatro"
+                             "galeria-cinco galeria-seis";
+        
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+
+        .titulo-galeria{
+            grid-area: titulo-galeria;
+        }
+        .galeria-uno{
+            grid-area: galeria-uno;
+            max-width: 40rem;
+            max-height: 40rem;
+        }
+        .galeria-dos{
+            grid-area: galeria-dos;
+            max-width: 40rem;
+            max-height: 40rem;
+        }
+        .galeria-tres{
+            grid-area: galeria-tres;
+            max-width: 40rem;
+            max-height: 40rem;
+        }
+        .galeria-cuatro{
+            grid-area: galeria-cuatro;
+            max-width: 40rem;
+            max-height: 40rem;
+        }
+        .galeria-cinco{
+            grid-area: galeria-cinco;
+            max-width: 40rem;
+            max-height: 40rem;
+        }
+        .galeria-seis{
+            grid-area: galeria-seis;
+            max-width: 40rem;
+            max-height: 40rem;
+        }
+    }
+    .sanji{
+        display: block;
+        margin-top: 4rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: "sanji-enamorado sanji";
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+    .mover{
+        grid-area: sanji-enamorado;
+        max-width: 30rem;
+        max-height: 30rem;
+    }
+    .mover:hover{
+        transform: rotate(335deg);
+    }
+    .aparecer{
+        grid-area: sanji;
+        max-width: 20rem;
+        max-height: 20rem;
+        animation-name: aparecer;
+        animation-duration: 20s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes aparecer{
+        from{
+            transform: scale(0);
+        }
+        to{
+            transform: scale(2);
+        }
+    }
+}

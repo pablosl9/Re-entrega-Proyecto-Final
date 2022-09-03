@@ -1,0 +1,13 @@
+@mixin box-botones{
+    list-style: none;
+    background-color: $color-secundario;
+    padding: 5px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+@mixin medidas-galeria($max-width, $max-height){
+    max-width: $max-width;
+    max-height: $max-height;
+}
