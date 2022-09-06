@@ -14,40 +14,40 @@
 </head>
 <body>
     <header class="d-flex justify-content-around">
-        <div>
-            <nav class="navbar navbar-expand-lg bg-menu col-12">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#"> <h1> Contacto </h1> </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item p-2 rounded-pill bg-light">
-                            <a href="../index.html"> Volver a la Home </a>
-                        </li>
-                        <li class="nav-item p-2 rounded-pill bg-light">
-                            <a href="../pages/informacion.html"> Informacion </a>
-                        </li>
-                        <li class="nav-item p-2 rounded-pill bg-light">
-                            <a href="../pages/contacto.html"> Contacto </a>
-                        </li>
-                        <li class="nav-item p-2 rounded-pill bg-light">
-                            <a href="../pages/galeria.html"> Galeria </a>
-                        </li>
-                        <li class="nav-item p-2 rounded-pill bg-light">
-                            <a href="../pages/hacer un pedido.html"> Hacer un Pedido </a> 
-                        </li>
-                        <li class="nav-item footer p-2 rounded-pill bg-light">
-                            <a href="#pie-de-pagina"> Ir al footer </a>
-                        </li>
-                        <li class="nav-item p-2 rounded-pill bg-light">
-                            <a href="../pages/registrarse.html"> Registrarse/Ingresar </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+        <nav class="navbar navbar-expand-lg bg-menu col-12">
+            <div class="container-fluid">
+              <a class="d-flex justify-content-start navbar-brand" href="#"> <h1>Contacto</h1> </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../index.html">Volver a la Home</a>
+                    </li>
+                    <li class="nav-item footer">
+                        <a class="nav-link active" href="#pie-de-pagina">Ir al Footer</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Nosotros </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="../pages/informacion.html">Informacion</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="../pages/contacto.html">Contacto</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="../pages/galeria.html">Galeria</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../pages/hacer un pedido.html">Hacer un Pedido</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../pages/registrarse.html">Registrarse/Ingresar</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <main>
@@ -97,7 +97,7 @@
         <table class="contact">
             <tbody>
                 <tr>
-                    <td> <a href="https://www.instagram.com/saranghae.bordados/" target="_blank"> <img class="ig" src="../img/instagram.png" alt="imagen logo de la red social instagram"> </a> </td>
+                    <td> <a href="https://www.instagram.com/saranghae.2u/" target="_blank"> <img class="ig" src="../img/instagram.png" alt="imagen logo de la red social instagram"> </a> </td>
                     <td> <a href="https://www.tiktok.com/@saranghae.4u" target="_blank"> <img class="tiktok" src="../img/tiktok.png" alt="imagen logo de la red social tiktok"> </a> </td>
                     <td> <a href="https://es-la.facebook.com" target="_blank"> <img class="fb" src="../img/facebook.png" alt="imagen logo de la red social facebook"> </a> </td>
                 </tr>
@@ -106,13 +106,15 @@
     </main>
     
     <footer id="pie-de-pagina">
-        <h3 class="derechos"> Todos los Derechos Reservados </h3>
+        <h3 class="derechos"> ©Todos los Derechos Reservados </h3>
         <ul class="ff">
             <li class="pago"> <a href="../pages/medios de pago.html"> Medios de Pago </a> </li>
             <li class="preguntas"> <a href="../pages/preguntas frecuentes.html"> Preguntas Frecuentes </a> </li>
         </ul>
+      
         <img class="logo" src="../img/Logo.jpeg" alt="Logo de Saranghae, personaje de anime one piece llamado Sanji">
-     </footer>
+        <img class="gato" src="../img/gato.gif" alt="gif de gatito con arcoiris">
+    </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>

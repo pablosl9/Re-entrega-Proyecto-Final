@@ -20,26 +20,10 @@ header{
     height: auto;
     display: block;
     background-color: $color-principal;
-    display: flex;
-    flex-direction: column;
     margin-bottom: 1rem;
     h1{
         font-weight: bold;
-        font-size: 2.3rem;
-        nav{
-            display: flex;
-            margin-bottom: 1rem;
-            ul{
-                list-style: none;
-                li{
-                    background-color: $color-secundario;
-                    padding: 5px;
-                    border-radius: 25px;
-                    font-weight: bold;
-                    font-size: 0.7rem;
-                }
-            }
-        }
+        font-size: 2rem;
     }
 }
 
@@ -52,10 +36,6 @@ header{
 }
 .carousel{
     display: none;
-}
-.boton-uno{
-    display: inline;
-    @include box-botones;
 }
 
 footer{
@@ -83,6 +63,7 @@ footer{
         grid-area: pago;
     }
     .logo{
+        border-radius: 4rem;
         grid-area: logo;
         max-width: 8rem;
         max-height: 8rem;
@@ -129,120 +110,239 @@ footer{
                          "galeria-tres galeria-tres"
                          "galeria-cuatro galeria-cuatro"
                          "galeria-cinco galeria-cinco"
-                         "galeria-seis galeria-seis";
-    
+                         "galeria-seis galeria-seis"
+                         "galeria-siete galeria-siete"
+                         "galeria-ocho galeria-ocho"
+                         "galeria-nueve galeria-nueve"
+                         "galeria-diez galeria-diez"
+                         "galeria-once galeria-once"
+                         "galeria-doce galeria-doce"
+                         "galeria-trece galeria-trece"
+                         "galeria-catorce galeria-catorce"
+                         "galeria-quince galeria-quince"
+                         "galeria-dieciseis galeria-dieciseis"
+                         "galeria-diecisiete galeria-diecisiete"
+                         "galeria-dieciocho galeria-dieciocho"
+                         "galeria-diecinueve galeria-diecinueve"
+                         "galeria-veinte galeria-veinte"
+                         "galeria-veintiuno galeria-veintiuno"
+                         "galeria-veintidos galeria-veintidos"
+                         "galeria-veintitres galeria-veintitres"
+                         "galeria-veinticuatro galeria-veinticuatro";
     @extend %center;
-    
-    .titulo-galeria{
-        grid-area: titulo-galeria;
-    }
-    .galeria-uno{
-        grid-area: galeria-uno;
-        margin-bottom: 2rem;
-        @include medidas-galeria(23rem, 23rem);
-    }
-    .galeria-dos{
-        grid-area: galeria-dos;
-        margin-bottom: 2rem;
-        @include medidas-galeria(23rem, 23rem);
-    }
-    .galeria-tres{
-        grid-area: galeria-tres;
-        margin-bottom: 2rem;
-        @include medidas-galeria(23rem, 23rem);
-    }
-    .galeria-cuatro{
-        grid-area: galeria-cuatro;
-        margin-bottom: 2rem;
-        @include medidas-galeria(23rem, 23rem);
-    }
-    .galeria-cinco{
-        grid-area: galeria-cinco;
-        margin-bottom: 2rem;
-        @include medidas-galeria(23rem, 23rem);
-    }
-    .galeria-seis{
-        grid-area: galeria-seis;
-        margin-bottom: 2rem;
-        @include medidas-galeria(23rem, 23rem);
-    }
+}
+.titulo-galeria{
+    grid-area: titulo-galeria;
+}
+.galeria-uno{
+    grid-area: galeria-uno;
+    margin-bottom: 2rem;
+    @include medidas-galeria(23rem, 23rem);
+}
+.galeria-dos{
+    grid-area: galeria-dos;
+    margin-bottom: 2rem;
+    @include medidas-galeria(23rem, 23rem);
+}
+.galeria-tres{
+    grid-area: galeria-tres;
+    margin-bottom: 2rem;
+    @include medidas-galeria(23rem, 23rem);
+}
+.galeria-cuatro{
+    grid-area: galeria-cuatro;
+    margin-bottom: 2rem;
+    @include medidas-galeria(23rem, 23rem);
+}
+.galeria-cinco{
+    grid-area: galeria-cinco;
+    margin-bottom: 2rem;
+    @include medidas-galeria(23rem, 23rem);
+}
+.galeria-seis{
+    grid-area: galeria-seis;
+    margin-bottom: 2rem;
+    @include medidas-galeria(23rem, 23rem);
+}
+.galeria-siete{
+    grid-area: galeria-siete;
+    margin-bottom: 2rem;
+    @include medidas-galeria(23rem, 23rem);
+}
+.galeria-ocho{
+    grid-area: galeria-ocho;
+    margin-bottom: 2rem;
+    @include medidas-galeria(23rem, 23rem);
+}
+.galeria-nueve{
+    grid-area: galeria-nueve;
+    margin-bottom: 2rem;
+    @include medidas-galeria(23rem, 23rem);
+}
+.galeria-diez{
+    grid-area: galeria-diez;
+    margin-bottom: 2rem;
+    @include medidas-galeria(23rem, 23rem);
+}
+.galeria-once{
+    grid-area: galeria-once;
+    margin-bottom: 2rem;
+    @include medidas-galeria(23rem, 23rem);
+}
+.galeria-doce{
+    grid-area: galeria-doce;
+    margin-bottom: 2rem;
+    @include medidas-galeria(23rem, 23rem);
+}
+.galeria-trece{
+    grid-area: galeria-trece;
+    margin-bottom: 2rem;
+    @include medidas-galeria(23rem, 23rem);
+}
+.galeria-catorce{
+    grid-area: galeria-catorce;
+    margin-bottom: 2rem;
+    @include medidas-galeria(23rem, 23rem);
+}
+.galeria-quince{
+    grid-area: galeria-quince;
+    margin-bottom: 2rem;
+    @include medidas-galeria(23rem, 23rem);
+}
+.galeria-dieciseis{
+    grid-area: galeria-dieciseis;
+    margin-bottom: 2rem;
+    @include medidas-galeria(23rem, 23rem);
+}
+.galeria-diecisiete{
+    grid-area: galeria-diecisiete;
+    margin-bottom: 2rem;
+    @include medidas-galeria(23rem, 23rem);
+}
+.galeria-dieciocho{
+    grid-area: galeria-dieciocho;
+    margin-bottom: 2rem;
+    @include medidas-galeria(23rem, 23rem);
+}
+.galeria-diecinueve{
+    grid-area: galeria-diecinueve;
+    margin-bottom: 2rem;
+    @include medidas-galeria(23rem, 23rem);
+}
+.galeria-veinte{
+    grid-area: galeria-veinte;
+    margin-bottom: 2rem;
+    @include medidas-galeria(23rem, 23rem);
+}
+.galeria-veintiuno{
+    grid-area: galeria-veintiuno;
+    margin-bottom: 2rem;
+    @include medidas-galeria(23rem, 23rem);
+}
+.galeria-veintidos{
+    grid-area: galeria-veintidos;
+    margin-bottom: 2rem;
+    @include medidas-galeria(23rem, 23rem);
+}
+.galeria-veintitres{
+    grid-area: galeria-veintitres;
+    margin-bottom: 2rem;
+    @include medidas-galeria(23rem, 23rem);
+}
+.galeria-veinticuatro{
+    grid-area: galeria-veinticuatro;
+    margin-bottom: 2rem;
+    @include medidas-galeria(23rem, 23rem);
 }
 .sanji{
+    display: none;
+}
+.gato{
     display: none;
 }
 
 @media screen and (min-width:600px){
     header h1{
-     font-size: 3rem;
+        font-size: 3rem;
     }
-
     header nav ul li{
-     font-size: 1.5rem;
+        font-size: 1.5rem;
+    }
+    .carousel{
+        display: block;
     }
 
-     .boton-uno{
-        margin-bottom: 2rem;
-     }
- 
-     .carousel{
-         display: block;
+    .galeria-uno{
+        @include medidas-galeria(40rem, 40rem);
     }
-
-    .galeria{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        grid-template-areas: "titulo-galeria titulo-galeria"
-                             "galeria-uno galeria-uno"
-                             "galeria-dos galeria-dos"
-                             "galeria-tres galeria-tres"
-                             "galeria-cuatro galeria-cuatro"
-                             "galeria-cinco galeria-cinco"
-                             "galeria-seis galeria-seis";
-        
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-
-        .titulo-galeria{
-            grid-area: titulo-galeria;
-        }
-        .galeria-uno{
-            grid-area: galeria-uno;
-            max-width: 40rem;
-            max-height: 40rem;
-            margin-bottom: 2rem;
-        }
-        .galeria-dos{
-            grid-area: galeria-dos;
-            max-width: 40rem;
-            max-height: 40rem;
-            margin-bottom: 2rem;
-        }
-        .galeria-tres{
-            grid-area: galeria-tres;
-            max-width: 40rem;
-            max-height: 40rem;
-            margin-bottom: 2rem;
-        }
-        .galeria-cuatro{
-            grid-area: galeria-cuatro;
-            max-width: 40rem;
-            max-height: 40rem;
-            margin-bottom: 2rem;
-        }
-        .galeria-cinco{
-            grid-area: galeria-cinco;
-            max-width: 40rem;
-            max-height: 40rem;
-            margin-bottom: 2rem;
-        }
-        .galeria-seis{
-            grid-area: galeria-seis;
-            max-width: 40rem;
-            max-height: 40rem;
-            margin-bottom: 2rem;
-        }
+    .galeria-dos{
+        @include medidas-galeria(40rem, 40rem);
+    }
+    .galeria-tres{
+        @include medidas-galeria(40rem, 40rem);
+    }
+    .galeria-cuatro{
+        @include medidas-galeria(40rem, 40rem);
+    }
+    .galeria-cinco{
+        @include medidas-galeria(40rem, 40rem);
+    }
+    .galeria-seis{
+        @include medidas-galeria(40rem, 40rem);
+    }
+    .galeria-siete{
+        @include medidas-galeria(40rem, 40rem);
+    }
+    .galeria-ocho{
+        @include medidas-galeria(40rem, 40rem);
+    }
+    .galeria-nueve{
+        @include medidas-galeria(40rem, 40rem);
+    }
+    .galeria-diez{
+        @include medidas-galeria(40rem, 40rem);
+    }
+    .galeria-once{
+        @include medidas-galeria(40rem, 40rem);
+    }
+    .galeria-doce{
+        @include medidas-galeria(40rem, 40rem);
+    }
+    .galeria-trece{
+        @include medidas-galeria(40rem, 40rem);
+    }
+    .galeria-catorce{
+        @include medidas-galeria(40rem, 40rem);
+    }
+    .galeria-quince{
+        @include medidas-galeria(40rem, 40rem);
+    }
+    .galeria-dieciseis{
+        @include medidas-galeria(40rem, 40rem);
+    }
+    .galeria-diecisiete{
+        @include medidas-galeria(40rem, 40rem);
+    }
+    .galeria-dieciocho{
+        @include medidas-galeria(40rem, 40rem);
+    }
+    .galeria-diecinueve{
+        @include medidas-galeria(40rem, 40rem);
+    }
+    .galeria-veinte{
+        @include medidas-galeria(40rem, 40rem);
+    }
+    .galeria-veintiuno{
+        @include medidas-galeria(40rem, 40rem);
+    }
+    .galeria-veintidos{
+        @include medidas-galeria(40rem, 40rem);
+    }
+    .galeria-veintitres{
+        @include medidas-galeria(40rem, 40rem);
+    }
+    .galeria-veinticuatro{
+        @include medidas-galeria(40rem, 40rem);
     }
 }
 
@@ -255,65 +355,60 @@ footer{
         display: flex; 
         flex-direction: row;
     }
-
-    footer{
-        margin-top: 20rem;
-    }
-
     .form{
         font-size: 1.5rem;
     }
-
     .usuario{
         font-size: 1.5rem;
     }
-    
-    .galeria{
+
+    footer{
+        justify-content: space-around;
+        align-content: space-around;
+        background-color: $color-principal;
+        margin-top: 3rem;
+        display: flex;
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto;
-        grid-template-areas: "titulo-galeria titulo-galeria"
-                             "galeria-uno galeria-dos"
-                             "galeria-tres galeria-cuatro"
-                             "galeria-cinco galeria-seis";
-        
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-
-        .titulo-galeria{
-            grid-area: titulo-galeria;
+        grid-template-areas: "logo gato gato derechos"
+                             "logo gato gato preguntas"
+                             "logo gato gato pago";
+        .ff{
+            list-style: none;
         }
-        .galeria-uno{
-            grid-area: galeria-uno;
-            max-width: 40rem;
-            max-height: 40rem;
+        .derechos{
+            grid-area: derechos;
         }
-        .galeria-dos{
-            grid-area: galeria-dos;
-            max-width: 40rem;
-            max-height: 40rem;
+        .preguntas{
+            grid-area: preguntas;
         }
-        .galeria-tres{
-            grid-area: galeria-tres;
-            max-width: 40rem;
-            max-height: 40rem;
+        .pago{
+            grid-area: pago;
         }
-        .galeria-cuatro{
-            grid-area: galeria-cuatro;
-            max-width: 40rem;
-            max-height: 40rem;
+        .logo{
+            border-radius: 4rem;
+            grid-area: logo;
+            @include medidas-galeria(8rem, 8rem);
         }
-        .galeria-cinco{
-            grid-area: galeria-cinco;
-            max-width: 40rem;
-            max-height: 40rem;
+        .gato{
+            grid-area: gato;
+            display: block;
+            @include medidas-galeria(22rem, 22rem);
+            animation-duration: 3s;
+            animation-name: slide;
         }
-        .galeria-seis{
-            grid-area: galeria-seis;
-            max-width: 40rem;
-            max-height: 40rem;
-        }
+        @keyframes slide {
+            from {
+              margin-left: 100%;
+              width: 300%
+            }
+          
+            to {
+              margin-left: 0%;
+              width: 100%;
+            }
+          }
     }
     .sanji{
         display: block;
@@ -328,22 +423,19 @@ footer{
     }
     .mover{
         grid-area: sanji-enamorado;
-        max-width: 30rem;
-        max-height: 30rem;
+        @include medidas-galeria(30rem, 30rem);
     }
     .mover:hover{
         transform: rotate(335deg);
     }
     .aparecer{
         grid-area: sanji;
-        max-width: 20rem;
-        max-height: 20rem;
+        @include medidas-galeria(20rem, 20rem);
         animation-name: aparecer;
         animation-duration: 20s;
         animation-timing-function: linear;
         animation-iteration-count: infinite;
     }
-    
     @keyframes aparecer{
         from{
             transform: scale(0);
