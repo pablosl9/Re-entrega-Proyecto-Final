@@ -11,8 +11,13 @@
 }
 
 body{
-    font-family:'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-image: url(../img/Fondo.jpg);
+}
+
+.logo-superior{
+    border-radius: 4rem;
+    @include medidas-galeria(8rem, 8rem);
 }
 
 header{
@@ -23,7 +28,7 @@ header{
     margin-bottom: 1rem;
     h1{
         font-weight: bold;
-        font-size: 2rem;
+        font-size: 1rem;
     }
 }
 
@@ -40,7 +45,7 @@ header{
 
 footer{
     background-color: $color-principal;
-    margin-top: 3rem;
+    margin-top: 10rem;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -65,8 +70,7 @@ footer{
     .logo{
         border-radius: 4rem;
         grid-area: logo;
-        max-width: 8rem;
-        max-height: 8rem;
+        @include medidas-galeria(8rem, 8rem);
     }
 }
 
