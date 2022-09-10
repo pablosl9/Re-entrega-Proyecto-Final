@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Realizamos Bordados en bastidores de diferentes medidas y Cursos. Decora con tus Personajes Favoritos!!.Realizamos Diseños Personalizados y Mucho Mas! Contactanos">
+  <meta name="keywords" content="HTML, CSS, SASS, Frameworks, Bordados, Saranghae, Anime, Manga">
+  <meta lang="">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,46 +17,43 @@
   <title> Home - Saranghae Bordados </title>
 </head>
 <body>
-  <header class="d-flex">
+  <header class="d-flex justify-content-around">
     <nav class="navbar navbar-expand-lg bg-menu col-12">
-        <div class="d-flex navbar-brand">
-            <a class="navbar-brand" href="index.html">
-              <img src="img/Logo.jpeg" alt="Logo de saranghae bordados, sanji personaje de one piece" style="border-radius: 4rem;" width="50rem" height="50rem">
-              Saranghae Bordados
-            </a>
-        </div>
+        <div class="container-fluid">
+          <a style="display: flex; flex-direction:row; justify-content:center;" class="navbar-brand" href="index.html"> <img class="logo-superior" src="img/Logo.jpeg" alt="Logo de Saranghae Bordados, personaje de one piece Sanji"></a> <h1>Saranghae Bordados</h1>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav">
-              <li class="nav-item footer">
-                <a class="nav-link active" href="#pie-de-pagina">Ir al Footer</a>
-              </li>
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Nosotros </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="pages/informacion.html">Informacion</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="pages/contacto.html">Contacto</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="pages/galeria.html">Galeria</a></li>
-                  </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="pages/hacer un pedido.html">Hacer un Pedido</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="pages/registrarse.html">Registrarse/Ingresar</a>
-              </li>
+                <li class="nav-item footer">
+                    <a class="nav-link active" href="#pie-de-pagina">Ir al Footer</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Nosotros </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="pages/informacion.html">Informacion</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="pages/contacto.html">Contacto</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="pages/galeria.html">Galeria</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="pages/hacer un pedido.html">Hacer un Pedido</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="pages/registrarse.html">Registrarse/Ingresar</a>
+                </li>
             </ul>
           </div>
+        </div>
       </nav>
-</header>
+  </header>
     
     <main class="container">
         <div class="row">
-          <div  class="col-sm-8 col-md-5 col-lg-5 col-xl-6 col-xxl-6">
+          <div  class="col-sm-8 col-md-6 col-lg-5 col-xl-6 col-xxl-6">
             <h2 style="font-weight: bold; padding-top: 2rem;"> Sobre mi </h2>
             <p> Hola soy Cata! <br>
                 Este es mi emprendimiento de bordados hechos a mano, desde cero ♡ <br>
@@ -66,12 +66,12 @@
                 definida la imagen se cotizará dependiendo de su complejidad y los <br> 
                 detalles que desees agregar! <br> <br> 
             </p>
-            <a class="boton-uno" href="https://www.instagram.com/saranghae.2u/" target="_blank"> <button type="button" class="btn btn-light"> Realizar un Pedido </button></a>
+            <a href="https://www.instagram.com/saranghae.2u/" target="_blank"> <button style="margin-bottom: 2rem;" type="button" class="btn btn-light"> Realizar un Pedido </button></a>
           </div>
-
-          <div id="carouselExampleControls" class="carousel slide col-sm-4 col-md-7 col-lg-7 col-xl-6 col-xxl-6" data-bs-ride="carousel">
-            <div class="carousel-inner ">
-              <div class="carousel-item">
+          
+          <div id="carouselExampleControls" class="carousel slide col-sm-4 col-md-6 col-lg-7 col-xl-6 col-xxl-6" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
                 <img src="img/bordado-diez.jpeg" class="d-block w-100" alt="bordado personaje de jojo´s bizarre adventure, jolyne cujo">
               </div>
               <div class="carousel-item">
@@ -80,10 +80,10 @@
               <div class="carousel-item">
                 <img src="img/bordado-trece.jpeg" class="d-block w-100" alt="bordado personajes de jojo´s bizarre adventure, joseph joestar y josuke higashikata">
               </div>
-              <div class="carousel-item active">
+              <div class="carousel-item">
                 <img src="img/bordado-dos.jpeg" class="d-block w-100" alt="bordado personajes de blue lock">
               </div>
-              <div class="carousel-item active">
+              <div class="carousel-item">
                 <img src="img/bordado-dieciseis.jpeg" class="d-block w-100" alt="bordado personaje satoru gojo de jujutsu kaisen">
               </div>
               <div class="carousel-item">
@@ -105,8 +105,8 @@
     <footer id="pie-de-pagina">
         <h3 class="derechos"> ©Todos los Derechos Reservados </h3>
         <ul class="ff">
-            <li class="pago"> <a href="pages/medios de pago.html"> Medios de Pago </a> </li>
-            <li class="preguntas"> <a href="pages/preguntas frecuentes.html"> Preguntas Frecuentes </a> </li>
+            <li class="pago"> <a href="pages/medios de pago.html"> <h3>Medios de Pago</h3> </a> </li>
+            <li class="preguntas"> <a href="pages/preguntas frecuentes.html"><h3>Preguntas Frecuentes</h3>  </a> </li>
         </ul>
       
         <img class="logo" src="img/Logo.jpeg" alt="Logo de Saranghae, personaje de anime one piece llamado Sanji">

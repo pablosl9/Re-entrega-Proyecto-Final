@@ -11,6 +11,7 @@
 }
 
 body{
+    height: auto;
     font-family: 'Roboto', sans-serif;
     background-image: url(../img/Fondo.jpg);
 }
@@ -28,8 +29,12 @@ header{
     margin-bottom: 1rem;
     h1{
         font-weight: bold;
-        font-size: 1rem;
+        font-size: 2rem;
     }
+}
+.logo-superior{
+    border-radius: 4rem;
+    @include medidas-galeria(4rem, 4rem);
 }
 
 .parrafo{
@@ -42,10 +47,43 @@ header{
 .carousel{
     display: none;
 }
+.mover{
+    @include medidas-galeria(10rem, 10rem);
+}
+.pagos{
+    margin-top: 2rem;
+    @include medidas-galeria(22rem, 22rem);
+}
+.annie{
+    @include medidas-galeria(22rem, 22rem);
+}
+.sasha{
+    padding-bottom: 1rem;
+    @include medidas-galeria(22rem, 22rem);
+}
+.levi{
+    @include medidas-galeria(28rem, 28rem);
+    animation-duration: 2s;
+    animation-name: deslizar;
+}
+@keyframes deslizar{
+    from {
+      margin-right: 500%;
+      width: 300%
+    }
+  
+    to {
+      margin-right: 0%;
+      width: 100%;
+    }
+}
 
 footer{
+    height: auto;
+    h3{
+        font-size: 1rem;
+    }
     background-color: $color-principal;
-    margin-top: 10rem;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
@@ -58,14 +96,20 @@ footer{
         list-style: none;
     }
     .derechos{
+        padding-top: 1rem;
         text-align: center;
         grid-area: derechos;
+        font-size: 1.2rem;
     }
     .preguntas{
+        text-align: center;
         grid-area: preguntas;
+        font-size: 1.2rem;
     }
     .pago{
+        text-align: center;
         grid-area: pago;
+        font-size: 1.2rem;
     }
     .logo{
         border-radius: 4rem;
@@ -83,25 +127,14 @@ footer{
     font-size: 1.1rem;
 }
 
-.usuario{
-    list-style: none;
-}
-
-.bot-form{
-    margin-top: 1rem;
-}
-
-.contact{
-    margin: 2rem;
-}
 .ig{
-    @include medidas-galeria(3rem, 3rem);
+    @include medidas-galeria(4rem, 4rem);
 }
 .tiktok{
-    @include medidas-galeria(3rem, 3rem);
+    @include medidas-galeria(4rem, 4rem);
 }
 .fb{
-    @include medidas-galeria(3rem, 3rem);
+    @include medidas-galeria(4rem, 4rem);
 }
 
 .galeria{
@@ -275,6 +308,22 @@ footer{
     .carousel{
         display: block;
     }
+    .pagos{
+        margin-top: 2rem;
+        @include medidas-galeria(45rem, 45rem);
+    }
+    .annie{
+        @include medidas-galeria(22rem, 22rem);
+    }
+    .sasha{
+        padding-bottom: 1rem;
+        @include medidas-galeria(22rem, 22rem);
+    }
+    .levi{
+        @include medidas-galeria(28rem, 28rem);
+        animation-duration: 2s;
+        animation-name: deslizar;
+    }
 
     .galeria-uno{
         @include medidas-galeria(40rem, 40rem);
@@ -348,11 +397,26 @@ footer{
     .galeria-veinticuatro{
         @include medidas-galeria(40rem, 40rem);
     }
+
+    .ig{
+        @include medidas-galeria(5rem, 5rem);
+    }
+    .tiktok{
+        @include medidas-galeria(5rem, 5rem);
+    }
+    .fb{
+        @include medidas-galeria(5rem, 5rem);
+    }
+    footer{
+        h3{
+            font-size: 1.6rem;
+        }
+    }
 }
 
 @media screen and (min-width:1024px){
     header{
-        background-color: lightpink;
+        background-color: $color-principal;
         position: sticky;
         top: 0;
         z-index: 2;
@@ -366,6 +430,22 @@ footer{
         font-size: 1.5rem;
     }
 
+    .pagos{
+        margin-top: 2rem;
+        @include medidas-galeria(45rem, 45rem);
+    }
+    .annie{
+        padding-top: 4rem;
+        @include medidas-galeria(32rem, 32rem);
+    }
+    .sasha{
+        padding-bottom: 1rem;
+        @include medidas-galeria(22rem, 22rem);
+    }
+    .levi{
+        @include medidas-galeria(28rem, 28rem);
+    }
+
     footer{
         justify-content: space-around;
         align-content: space-around;
@@ -375,9 +455,9 @@ footer{
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto;
-        grid-template-areas: "logo gato gato derechos"
-                             "logo gato gato preguntas"
-                             "logo gato gato pago";
+        grid-template-areas: "logo derechos gato"
+                             "logo preguntas gato"
+                             "logo pago gato";
         .ff{
             list-style: none;
         }
@@ -399,44 +479,39 @@ footer{
             grid-area: gato;
             display: block;
             @include medidas-galeria(22rem, 22rem);
-            animation-duration: 3s;
+            animation-duration: 7s;
             animation-name: slide;
         }
         @keyframes slide {
             from {
-              margin-left: 100%;
+              margin-right: 500%;
               width: 300%
             }
           
             to {
-              margin-left: 0%;
+              margin-right: 0%;
               width: 100%;
             }
           }
     }
-    .sanji{
-        display: block;
-        margin-top: 4rem;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-        grid-template-areas: "sanji-enamorado sanji";
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-    }
+
     .mover{
-        grid-area: sanji-enamorado;
         @include medidas-galeria(30rem, 30rem);
     }
     .mover:hover{
         transform: rotate(335deg);
     }
+    .sanji{
+        display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-top: 5rem;
+    }
     .aparecer{
-        grid-area: sanji;
-        @include medidas-galeria(20rem, 20rem);
+        @include medidas-galeria(30rem, 30rem);
         animation-name: aparecer;
-        animation-duration: 20s;
+        animation-duration: 7s;
         animation-timing-function: linear;
         animation-iteration-count: infinite;
     }
@@ -445,7 +520,16 @@ footer{
             transform: scale(0);
         }
         to{
-            transform: scale(2);
+            transform: scale(1.3);
         }
+    }
+    .ig{
+        @include medidas-galeria(7rem, 7rem);
+    }
+    .tiktok{
+        @include medidas-galeria(7rem, 7rem);
+    }
+    .fb{
+        @include medidas-galeria(7rem, 7rem);
     }
 }
